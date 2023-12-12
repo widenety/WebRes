@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url('/WebRes/_css/common.css');
+
+/* ==============================
+* WRAP
+================================= */
+* {letter-spacing:-.05em}
+body {background:linear-gradient( 90deg, #eee 19px, transparent 1%) center, linear-gradient( #eee 19px, transparent 1%) center #aaa;background-size:20px 20px}
+#wrap {max-width:1400px;margin:0 auto;}/* overflow-x:hidden;overflow-y:auto */
+@media all and (max-width:1440px) {
+	#wrap {max-width:none}
+}
+
+/* ==============================
+* UTIL
+================================= */
+/** -- BUTTON PKG */
+.btnPkg1 {}
+.btnPkg1 {display:flex;flex-flow:row;flex-wrap:wrap}
+.btnPkg1 li {box-sizing:border-box;position:relative;padding:0 0 0 10px;margin:0 0 0 10px}
+.btnPkg1 li:before {content:"";display:block;position:absolute;width:1px;height:12px;left:0;top:50%;transform:translateY(-50%);background:#aaa}
+.btnPkg1 li:first-child {padding:0;margin:0}
+.btnPkg1 li:first-child::before {display:none}
+.btnPkg1 a {display:block;line-height:1;padding:5px 0;box-sizing:border-box;position:relative;transition:all .3s ease}
+.btnPkg1 a:after {content:"";display:block;position:absolute;width:0;height:1px;left:50%;bottom:0;background:#14B694;transition:all .3s ease}
+.btnPkg1 a span {letter-spacing:0;font-size:15px;font-weight:500}
+.btnPkg1 a:focus-visible:after,
+.btnPkg1 a:hover:after {left:0;width:100%}
+.btnPkg1 a:focus-visible,
+.btnPkg1 a:hover {color:#14B694}
+@media all and (max-width:499px) {
+	.btnPkg1 a span {font-size:13px}
+}
+
+/* ==============================
+* HEADER
+================================= */
+#headerWr {height:100px;display:flex;flex-flow:row;flex-wrap:wrap;justify-content:space-between;align-items:center;align-content:center;font-family:"Raleway"}
+#headerWr #header h1 {line-height:1}
+#headerWr #header h1 a {display:block}
+#headerWr #header h1 a span {display:block;line-height:1.2;letter-spacing:0;box-sizing:border-box;transition:all .3s ease}
+#headerWr #header h1 a:focus-visible span,
+#headerWr #header h1 a:hover span {color:#14B694}
+#headerWr #header h1 a .t1 {font-size:24px;font-weight:700}
+#headerWr #header h1 a .t2 {font-size:13px;font-weight:500;color:#999;margin:2px 0 0 2px}
+#headerWr #gnavi {display:flex;flex-flow:row;flex-wrap:wrap;align-items:center;align-content:center}
+#headerWr #gnavi .btnPkg1 {display:inline-flex}
+#headerWr #gnavi .btnPkg1 .txt {}
+#headerWr #gnavi .btnPkg1 .ico {display:none}
+#headerWr #gnavi .navCtrl {display:none;padding:0 0 0 2px;margin:0 0 0 10px;box-sizing:border-box;position:relative}
+#headerWr #gnavi .navCtrl:before {content:"";display:block;position:absolute;width:1px;height:12px;left:0;top:50%;transform:translateY(-50%);background:#aaa}
+#headerWr #gnavi .navCtrl .navCtrlBtn {display:block;width:30px;height:30px;border:0;background:transparent;box-sizing:border-box;position:relative}
+@media all and (max-width:1440px) {
+	#headerWr {margin:0 20px}
+}
+@media all and (max-width:999px) {
+	#headerWr #gnavi {margin:0 -10px 0 0}
+	#headerWr #gnavi .navCtrl {display:inline-flex}
+}
+@media all and (max-width:599px) {
+	#headerWr {height:70px}
+	#headerWr #header h1 {display:flex;flex-flow:row;flex-wrap:wrap;height:50px;align-items:center;align-content:center}
+	#headerWr #header h1 a {}
+	#headerWr #header h1 a .t1 {font-size:20px}
+	#headerWr #header h1 a .t2 {font-size:11px}
+	#headerWr #gnavi {margin:0 -15px 0 0}
+	#headerWr #gnavi .btnPkg1 li {padding:0;margin:0}
+	#headerWr #gnavi .btnPkg1 a {padding:0;width:50px;height:50px;}
+	#headerWr #gnavi .btnPkg1 a:after {display:none}
+	#headerWr #gnavi .btnPkg1 .txt {display:none}
+	#headerWr #gnavi .btnPkg1 .ico {display:block;font-size:18px;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:20px;height:20px;line-height:20px}
+	#headerWr #gnavi .navCtrl {padding:0;margin:0;}
+	#headerWr #gnavi .navCtrl .navCtrlBtn {font-size:18px;width:50px;height:50px;}
+}
+@media all and (max-width:399px) {
+	#headerWr #header h1 a .t1 {font-size:17px}
+	#headerWr #header h1 a .t2 {font-size:10px}
+}
+
+/* ==============================
+* CONTENTS CONTAINER
+================================= */
+#contentsWr {display:flex;flex-flow:row;flex-wrap:wrap}
+#contentsWr > * {box-sizing:border-box;position:relative}
+#contentsWr .visualBox {width:100%}
+#contentsWr .visual {width:100%;height:100px;display:flex;flex-flow:row;flex-wrap:wrap;align-items:center;align-content:center;justify-content:center;background:linear-gradient( 45deg, #14B694 0, #5e82a5 100% );}
+#contentsWr .visual:before {border-radius:0}
+#contentsWr .visual .slogan {font-family:"Raleway";font-size:20px;color:#fff;text-shadow:0 0 5px rgba(0, 0, 0, .5);letter-spacing:0}
+#contentsWr .nav {width:150px;padding:20px 20px 20px 0}
+#contentsWr .nav .navHead {display:none}
+#contentsWr .nav .navCore {display:block;font-family:"Raleway"}
+#contentsWr .nav .navCore li {display:block;margin:0 0 5px}
+#contentsWr .nav .navCore li a {display:block}
+#contentsWr .nav .navCore li a span {display:inline-block;line-height:1.3;letter-spacing:0;font-size:15px;font-weight:500;box-sizing:border-box;position:relative;word-wrap:break-word;word-break:keep-all;white-space:normal;padding:5px 0;;transition:all .3s ease}
+#contentsWr .nav .navCore li a span:after {content:"";display:block;position:absolute;width:0;height:1px;background:#14B694;left:0;bottom:0;transition:all .3s ease}
+#contentsWr .nav .navCore li.on a span,
+#contentsWr .nav .navCore li a:focus-visible span,
+#contentsWr .nav .navCore li a:hover span {color:#14B694}
+#contentsWr .nav .navCore li.on a span:after,
+#contentsWr .nav .navCore li a:focus-visible span:after,
+#contentsWr .nav .navCore li a:hover span:after {width:100%}
+#contentsWr .navOverlay {display:none}
+#contentsWr .contents {width:calc( 100% - 150px );border-left:1px solid #ddd;padding:20px 0 20px 20px;min-height:calc( 100vh - 100px - 100px - 50px )}
+#contentsWr .contents .contentsCore {background:#fff;box-sizing:border-box;padding:20px;min-height:100%;position:relative;box-shadow:0 0 2px rgba(0, 0, 0, 0.35), 0 85px 180px 0 #fff, 0 12px 8px -5px rgba(0, 0, 0, 0.85)}
+@media all and (max-width:1440px) {
+	#contentsWr {margin:0 20px}
+}
+@media all and (max-width:999px) {
+	#contentsWr .visual {height:80px}
+	#contentsWr .nav {width:400px;height:100%;padding:0;position:fixed;right:-400px;top:0;background:#fff;z-index:10;transition:right .5s ease}
+	#contentsWr .nav.show {right:0;box-shadow:-10px 0 20px rgba(0, 0, 0, .25)}
+	#contentsWr .nav .navHead {display:flex;flex-flow:row;flex-wrap:wrap;width:100%;height:101px;align-items:center;align-content:center;justify-content:space-between;box-sizing:border-box;padding:0 10px 0 20px;box-sizing:border-box;border-bottom:1px solid #ddd}
+	#contentsWr .nav .navHead .navHeadTit {font-family:"Raleway"}
+	#contentsWr .nav .navHead .navHeadTit span {display:block;line-height:1.2;letter-spacing:0;box-sizing:border-box}
+	#contentsWr .nav .navHead .navHeadTit .t1 {font-size:24px;font-weight:700;color:#14B694}
+	#contentsWr .nav .navHead .navHeadTit .t2 {font-size:13px;font-weight:500;color:#999;padding:0 0 0 2px}
+	#contentsWr .nav .navHead .navHeadCtrl {}
+	#contentsWr .nav .navHead .navHeadCtrl button {display:block;width:30px;height:30px;border:0;background:transparent;font-size:25px;background:transparent;color:#000}
+	#contentsWr .nav .navCore {box-sizing:border-box;padding:20px}
+	#contentsWr .navOverlay {display:none;position:fixed;width:100%;height:0;left:0;top:0;background:rgba(0, 0, 0, .5);z-index:9;opacity:0;transition:opacity .5s ease}
+	#contentsWr .navOverlay.show {display:block;}
+	#contentsWr .navOverlay.open {height:100%;opacity:1}
+	#contentsWr .navOverlay.close {opacity:0}
+	#contentsWr .contents {width:100%;border-left:0;padding:20px 0;min-height:calc( 100vh - 100px - 80px - 50px )}
+}
+@media all and (max-width:599px) {
+	#contentsWr .visual {height:50px}
+	#contentsWr .visual .slogan {font-size:15px}
+	#contentsWr .nav {width:100%;right:-100%}
+	#contentsWr .nav .navHead {height:71px}
+	#contentsWr .nav .navHead .navHeadTit .t1 {font-size:20px}
+	#contentsWr .nav .navHead .navHeadTit .t2 {font-size:11px}
+	#contentsWr .contents {min-height:calc( 100vh - 70px - 50px - 80px );}
+}
+@media all and (max-width:399px) {
+	#contentsWr .nav .navHead .navHeadTit .t1 {font-size:17px}
+	#contentsWr .nav .navHead .navHeadTit .t2 {font-size:10px}
+}
+
+/* ==============================
+* FOOTER
+================================= */
+#footerWr {border-top:1px solid #ddd;position:relative}
+#footerWr:after {display:none}
+#footerWr footer {height:50px;font-family:"Raleway";display:flex;flex-flow:row;flex-wrap:wrap;justify-content:space-between;align-items:center;align-content:center;font-family:"Raleway"}
+#footerWr .copy {letter-spacing:0}
+#footerWr .fnavi {}
+@media all and (max-width:1400px) {
+	#footerWr {margin:0 20px}
+}
+@media all and (max-width:599px) {
+	#footerWr footer {display:block;height:auto}
+	#footerWr .copy {display:flex;flex-flow:row;flex-wrap:wrap;width:100%;align-items:flex-end;align-content:flex-end;height:30px;}
+	#footerWr .fnavi .btnPkg1 {justify-content:space-between;margin:0 -10px}
+	#footerWr .fnavi .btnPkg1 li {padding:0;margin:0}
+	#footerWr .fnavi .btnPkg1 li:before {display:none}
+	#footerWr .fnavi .btnPkg1 li a {height:50px;display:flex;flex-flow:row;flex-wrap:wrap;padding:0 10px;align-items:center;align-content:center}
+}

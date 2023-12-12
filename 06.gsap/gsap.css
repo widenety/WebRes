@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+#gsap {}
+#gsap > * {box-sizing:border-box;border:1px solid #ddd;border-bottom:0;padding:20px}
+#gsap > *:last-child {border-bottom:1px solid #ddd}
+#gsap img {display:block;width:100%;max-width:800px;height:auto}
+#gsap .pin-spacer {background:linear-gradient( to bottom, #abc 0, #cba 100%)}
+#gsap .sectionTitle {width:250px;font-size:30px;font-weight:700;color:#000;box-sizing:border-box;padding:20px;}
+#gsap .sectionTitle br {display:none}
+#gsap .sectionList {width:calc( 100% - 270px );box-sizing:border-box;padding:20px;background:#eee}
+#gsap .gsap01,
+#gsap .gsap03 {display:flex;flex-flow:row;flex-wrap:wrap;justify-content:space-between;overflow:hidden}
+#gsap .gsap02 {height:50vh}
+#gsap .gsap04 {height:50vh}
+@media all and (max-width:999px) {
+	#gsap .sectionTitle {width:140px;font-size:18px;font-weight:500}
+	#gsap .sectionList {width:calc( 100% - 160px )}
+}
+@media all and (max-width:599px) {
+	#gsap > * {padding:10px}
+	#gsap .sectionTitle {width:100px;font-size:15px;padding:10px;}
+	#gsap .sectionTitle br {display:block}
+	#gsap .sectionList {width:calc( 100% - 110px );padding:10px;}
+}

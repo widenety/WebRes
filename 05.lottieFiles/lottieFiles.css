@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#lottie {}
+#lottie ul {display:flex;flex-flow:row;flex-wrap:wrap;}
+#lottie ul li {width:25%;border:5px solid #fff;box-sizing:border-box;background:#eee;padding:5px;}
+#lottie .aniSpace {display:flex;flex-flow:row;flex-wrap:wrap;width:100%;height:100%;align-items:center;align-content:center;justify-content:center;background:#fff}
+#lottie .aniContainer {}
+@media all and (max-width:999px) {
+	#lottie ul li {width:33.3333%}
+}
+@media all and (max-width:599px) {
+	#lottie ul li {width:50%}
+}
+@media all and (max-width:399px) {
+	#lottie ul li {width:100%}
+}
