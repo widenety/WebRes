@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<? include("/web/home/widenety/html/WebRes/_inc/head_DefaultSet.php") ?>
-	<title>Web Resources</title>
+	<title>Web Resources.</title>
 	<link rel="stylesheet" type="text/css" href="/WebRes/_css/main.css">
 </head>
 <body>
