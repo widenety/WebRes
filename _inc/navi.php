@@ -16,6 +16,7 @@
 		<li class="<?= ( $pageName == "lottieFiles.php" ) ? "on" : ""; ?>"><a href="/WebRes/05.lottieFiles/lottieFiles.php" class="skeleton"><span>LottieFiles</span></a></li>
 		<li class="<?= ( $pageName == "gsap.php" ) ? "on" : ""; ?>"><a href="/WebRes/06.gsap/gsap.php" class="skeleton"><span>GSAP</span></a></li>
 		<li class="<?= ( $pageName == "threeJs.php" ) ? "on" : ""; ?>"><a href="/WebRes/07.threeJs/threeJs.php" class="skeleton"><span>Three.js</span></a></li>
+		<li class="<?= ( $pageName == "roulette.php" ) ? "on" : ""; ?>"><a href="/WebRes/08.roulette/roulette.php" class="skeleton"><span>Roulette</span></a></li>
 		<li class="<?= ( $pageName == "privacyPolicy.php" ) ? "on" : ""; ?>"><a href="/WebRes/privacyPolicy/privacyPolicy.php" class="skeleton"><span>Privacy Policy</span></a></li>
 	</ul>
 </nav>
